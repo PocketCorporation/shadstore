@@ -36,7 +36,8 @@ export default function ProductCard({ product }: ProductCardProps) {
                     </div>
                 </CardHeader>
                 <CardContent>
-                    <CardDescription>{product.description}</CardDescription>
+                    <p className='text-xl font-bold'>${product.price}</p>
+                    <CardDescription>{product.description.slice(0,80)}...</CardDescription>
                 </CardContent>
                 <CardFooter>
                     <p>Card Footer</p>
